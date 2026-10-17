@@ -1,0 +1,15 @@
+{
+  "name": "Projeto 85 — Treino & Dieta",
+  "short_name": "Projeto 85",
+  "description": "Seu treino, alimentação e evolução em um só lugar.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#0b1012",
+  "background_color": "#080c0d",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
