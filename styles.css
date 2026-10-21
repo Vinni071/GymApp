@@ -12,3 +12,50 @@
 @media(max-width:700px){body{background:#fafafa}.sidebar{display:none}.shell{display:block;width:100%;max-width:520px}.main{padding:24px 22px 110px;margin:0}.topbar{margin-bottom:29px}.top-user .avatar{width:33px;height:33px}.greeting{font-size:11px}.top-date{font-size:9px}.round-icon{width:32px;height:32px}.home-heading{font-size:29px;line-height:1.2;margin-bottom:25px;max-width:340px;letter-spacing:-1px}.search-form{height:49px;margin-bottom:18px}.training-banner{min-height:190px;padding:20px;margin-bottom:26px;border-radius:22px}.banner-copy{max-width:58%}.banner-copy h2{font-size:25px;max-width:160px}.banner-kicker{font-size:8px;letter-spacing:1.35px;margin-bottom:10px}.banner-copy p{font-size:10px;max-width:155px;margin-bottom:16px}.training-banner>img{object-position:61% center}.training-banner:after{background:linear-gradient(90deg,#101010 0%,#111e 18%,#1119 48%,#1110 80%)}.banner-badge{font-size:8px;right:12px;bottom:14px}.home-lower{gap:24px}.home-secondary{grid-template-columns:1fr}.home-secondary .daily-checks{grid-column:auto}.routine-card{padding:10px 12px;gap:12px}.routine-thumb{width:68px;height:68px}.routine-info h3{font-size:12px}.routine-info p{font-size:10px}h2{font-size:15px}.routine-list{gap:10px}.day-tabs{margin-bottom:14px}.day-tabs button{font-size:10px;padding:9px 3px}.routine-label{font-size:10px;margin-bottom:11px}.mobile-nav{display:flex;align-items:center;justify-content:space-around;gap:2px;position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:40;background:#090909;border:1px solid #222;border-radius:40px;width:min(420px,calc(100% - 36px));padding:10px 10px;box-shadow:0 8px 26px #0002}.mobile-nav button{position:relative;display:grid;place-items:center;gap:3px;flex:1;background:transparent;border:0;color:#929296;padding:5px 1px 7px;min-width:0;font-size:8px;line-height:1.25}.mobile-nav button.active{color:#fff}.mobile-nav button svg{width:20px;height:20px}.mobile-nav button.active:after{content:'';height:2px;width:14px;border-radius:2px;background:#fff;position:absolute;bottom:0}.page-head{gap:8px;align-items:start;margin-bottom:21px}.page-head h1{font-size:28px}.page-head>.tag{display:none}.page-head>.btn{padding:9px 11px;font-size:10px}.subtitle{font-size:11px;max-width:300px}.eyebrow{font-size:9px;letter-spacing:1px}.panel{padding:17px;border-radius:21px}.three-col,.card-grid{gap:8px}.stat-card{padding:13px 10px}.stat-label{font-size:10px}.stat-value{font-size:23px}.stat-foot{font-size:9px}.stat-value>span{font-size:10px!important}.two-col{gap:16px}.cal-list{gap:5px}.workout-hero{padding:16px;margin-bottom:22px}.workout-hero h2{font-size:24px}.workout-hero .small-muted{font-size:11px}.workout-aside{display:grid;grid-template-columns:1fr}.workout-aside>.panel:first-child{grid-column:auto}.workout-hero>.pill{font-size:9px}.exercise-photo{height:200px}.ex-body{padding:14px}.ex-name{font-size:12px}.ex-help{font-size:9px}.exercise summary{gap:11px;padding:10px 12px}.exercise .routine-thumb{width:66px;height:66px}.meal-grid{grid-template-columns:1fr}.food-summary{padding:18px}.macro{padding:10px}.macro .sub{font-size:9px}.macro .val{font-size:17px}.macro .val span{font-size:9px!important}.meal-card{padding:17px}.disclaimer{font-size:9px}.achievement{padding:13px}.achievement-title{font-size:11px}.modal{padding:20px}.input{font-size:16px}.set-table .input{font-size:14px}.toasts{bottom:103px}.section-head .small-muted{font-size:10px}.workout-search{margin-bottom:14px}}
 @media(max-width:350px){.main{padding-left:16px;padding-right:16px}.home-heading{font-size:27px}.top-date{display:none}.routine-thumb{width:58px;height:58px}.banner-copy h2{font-size:23px}.banner-badge{display:none}.set-table{grid-template-columns:47px minmax(42px,1fr) minmax(42px,1fr) 30px;gap:5px}.macro-grid{gap:4px}.macro{padding:8px}.profile-grid{gap:8px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Dark theme keeps the same layout and the original colors in photographs. */
+:root[data-theme="dark"]{--bg:#111214;--panel:#1b1c20;--panel2:#24252a;--panel3:#2d2f35;--stroke:#303137;--stroke2:#45474f;--text:#f0f0f2;--muted:#a5a6af;--subtle:#9698a2;--lime:#f0f0f2;--lime2:#d8d9df;--blue:#8fb1c5;--orange:#d4af80;--red:#e39191;--shadow:0 5px 20px #00000010;color-scheme:dark}
+[data-theme="dark"] body{background:var(--bg)}
+[data-theme="dark"] :is(.round-icon,.panel,.search-form,.routine-card,.mini-section,.daily-checks,.exercise,.food-summary,.meal-card,.achievement,.modal,.circle-btn){background:var(--panel);border-color:var(--stroke)}
+[data-theme="dark"] :is(.mini-card,.macro,.note,.rest,.workout-hero,.exercise-fallback,.empty){background:var(--panel2);border-color:var(--stroke)}
+[data-theme="dark"] :is(.metric-icon,.task-ico,.tag,.pill,.week-dot i){background:var(--panel2);color:var(--text)}
+[data-theme="dark"] .avatar{background:#38332d;color:#e2c9a7}
+[data-theme="dark"] .home-heading span{color:#a5a6af}
+[data-theme="dark"] .search-form :is(input,svg){color:var(--text)}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#9698a2}
+[data-theme="dark"] .day-tabs button{background:var(--panel);border-color:var(--stroke);color:var(--muted)}
+[data-theme="dark"] :is(.day-tabs button.active,.cal-item.current,.day-item.today,.week-dot.today i){background:var(--text);border-color:var(--text);color:#18191c}
+[data-theme="dark"] .nav-btn.active{background:var(--panel3);color:var(--text)}
+[data-theme="dark"] .btn{background:var(--text);color:#16171a;border-color:var(--text)}
+[data-theme="dark"] :is(.btn-ghost,.btn-quiet){background:var(--panel);color:var(--text);border-color:var(--stroke2)}
+[data-theme="dark"] .btn-danger{background:#302024;color:#f0a6a6;border-color:#694048}
+[data-theme="dark"] .banner-copy .btn{background:#fff;color:#141416;border:0}
+[data-theme="dark"] :is(.progressbar,.macro .bar){background:#373940}
+[data-theme="dark"] .progressbar>div{background:#e4e5e9}
+[data-theme="dark"] .progressbar.blue>div{background:#8fb1c5}
+[data-theme="dark"] .progressbar.orange>div{background:#d4af80}
+[data-theme="dark"] .macro:first-child .bar>div{background:#e4e5e9!important}
+[data-theme="dark"] .input{background:#151619;color:var(--text);border-color:var(--stroke2)}
+[data-theme="dark"] .input:focus{border-color:#aaaebd}
+[data-theme="dark"] .check{background:#151619;border-color:#646773}
+[data-theme="dark"] .check:checked{background:var(--text);border-color:var(--text)}
+[data-theme="dark"] .check:checked:before{color:#151619}
+[data-theme="dark"] .set-done-input{background:#20312a;border-color:#4e7462}
+[data-theme="dark"] :is(.routine-thumb,.exercise-photo){mix-blend-mode:normal;background:var(--panel2)}
+[data-theme="dark"] .pill.good{background:#24372d;color:#b4d9c0}
+[data-theme="dark"] .pill.blue{background:#25323e;color:#bdd8ec}
+[data-theme="dark"] .pill.orange{background:#3a3025;color:#e2c09a}
+[data-theme="dark"] .meal-symbol{background:#353028}
+[data-theme="dark"] .meal-card.consumed{border-color:#52725d}
+[data-theme="dark"] .meal-card.consumed .meal-symbol{background:#24372d}
+[data-theme="dark"] .chart :is([stroke="#29292c"],[fill="#29292c"]){stroke:var(--text);fill:var(--text)}
+[data-theme="dark"] .chart polyline[stroke="#29292c"]{fill:none}
+[data-theme="dark"] .chart stop[stop-color="#29292c"]{stop-color:var(--text)}
+[data-theme="dark"] .chart :is(.chart-axis,.chart-label){fill:var(--muted)}
+[data-theme="dark"] .chart-grid{stroke:var(--stroke2)}
+[data-theme="dark"] .toast{background:#e4e5e9;color:#17181b}
+[data-theme="dark"] .toast.error{background:#b65151;color:#fff}
+[data-theme="dark"] .mobile-nav{border-color:#3c3d44;box-shadow:0 8px 26px #0005}
+[data-theme="dark"] .modal-cover{background:#0009}
+.theme-toggle{flex-shrink:0}
+@media(max-width:350px){.top-right{gap:6px}.level-chip{font-size:10px}.topbar{gap:6px}.greeting{font-size:10px}.top-user{gap:7px}}

@@ -5,10 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fafafa" />
   <meta name="description" content="Seu plano pessoal de treino, alimentação e evolução com conquistas e progresso." />
-  <meta name="color-scheme" content="light" />
+  <meta name="color-scheme" content="light dark" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/png" href="icon-192.png" />
   <title>Projeto 85 • Seu caminho</title>
+  <script>
+    // Apply the saved theme before the first paint.
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('projeto85-theme'); } catch (_) {}
+      if (theme !== 'dark' && theme !== 'light') theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111214' : '#fafafa';
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
