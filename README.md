@@ -67,3 +67,14 @@ Os dados continuam na chave original de armazenamento local. O redesign preserva
 
 - Banner: [Unsplash](https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e). Arquivo servido localmente; fotografia ilustrativa, sem associação com o aplicativo.
 - Exercícios: [free-exercise-db](https://github.com/yuhonas/free-exercise-db), sob Unlicense. Fontes individuais registradas em `EXERCISE_MEDIA` no `app.js`. Imagens ilustrativas; equipamentos podem variar entre academias.
+
+
+## Animações dos exercícios
+
+As demonstrações animadas vêm de [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset), revisão `7455efae41b330c265e7cd4b78dfa848e7ce5ebd`. As mídias permanecem em GIF, com resolução original de 180×180, disponíveis no cache offline. Fonte e identificador de cada animação constam em `EXERCISE_MEDIA` no `app.js`.
+
+© Gym visual — https://gymvisual.com/
+
+A licença MIT do dataset não cobre as mídias. Consulte `assets/EXERCISES-DATASET-LICENSE.txt` e `assets/EXERCISES-DATASET-NOTICE.md` e os termos da Gym visual.
+
+A prancha usa a demonstração da versão com peso, identificada por uma nota; o plano mantém a prancha sem carga adicional. A elevação pélvica mantém a foto com banco e barra, pois não há GIF equivalente dessa variação no catálogo. As fotos anteriores são preservadas como alternativa caso alguma animação não carregue.

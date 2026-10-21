@@ -59,3 +59,9 @@
 [data-theme="dark"] .modal-cover{background:#0009}
 .theme-toggle{flex-shrink:0}
 @media(max-width:350px){.top-right{gap:6px}.level-chip{font-size:10px}.topbar{gap:6px}.greeting{font-size:10px}.top-user{gap:7px}}
+
+/* Keep the dataset animations at their original 180×180 display size. */
+.exercise-photo.exercise-animation{width:180px;height:180px;max-width:100%;margin:0 auto;background:#fff}
+.media-credit{font-size:9px;line-height:1.6;color:var(--muted);margin:9px 0 0;overflow-wrap:anywhere}
+.media-credit a{text-decoration:none}.media-credit a:hover{text-decoration:underline}
+.media-note{margin:9px 0 0}.disclaimer>.media-credit{margin:0 0 8px}

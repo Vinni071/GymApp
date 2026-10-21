@@ -1,4 +1,4 @@
-const CACHE_NAME = 'projeto85-app-v6';
+const CACHE_NAME = 'projeto85-app-v7';
 const OFFLINE_FILES = [
   "./",
   "./index.html",
@@ -38,7 +38,36 @@ const OFFLINE_FILES = [
   "./assets/exercises/supino-reto.jpg",
   "./assets/exercises/triceps-corda.jpg",
   "./assets/exercises/triceps-polia.jpg",
-  "./assets/training.jpg"
+  "./assets/training.jpg",
+  "./assets/animations/0025.gif",
+  "./assets/animations/0031.gif",
+  "./assets/animations/0155.gif",
+  "./assets/animations/0175.gif",
+  "./assets/animations/0180.gif",
+  "./assets/animations/0198.gif",
+  "./assets/animations/0200.gif",
+  "./assets/animations/0201.gif",
+  "./assets/animations/0285.gif",
+  "./assets/animations/0292.gif",
+  "./assets/animations/0313.gif",
+  "./assets/animations/0314.gif",
+  "./assets/animations/0327.gif",
+  "./assets/animations/0334.gif",
+  "./assets/animations/0405.gif",
+  "./assets/animations/0432.gif",
+  "./assets/animations/0577.gif",
+  "./assets/animations/0585.gif",
+  "./assets/animations/0586.gif",
+  "./assets/animations/0594.gif",
+  "./assets/animations/0599.gif",
+  "./assets/animations/0602.gif",
+  "./assets/animations/0605.gif",
+  "./assets/animations/0739.gif",
+  "./assets/animations/0743.gif",
+  "./assets/animations/0770.gif",
+  "./assets/animations/1299.gif",
+  "./assets/animations/2135.gif",
+  "./assets/animations/2616.gif"
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(OFFLINE_FILES)).then(() => self.skipWaiting()));
