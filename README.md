@@ -56,3 +56,14 @@ Projeto85/
 ├── README.md               # documentação do repositório
 └── COMO_USAR.md            # guia detalhado em português
 ```
+
+## Interface v5
+
+A navegação foi refeita com um início visual, banner fotográfico, seletor de dias e cartões compactos. Em Treinos, toque no exercício para abrir a foto do equipamento e o registro de séries. A busca encontra exercícios por nome ou equipamento. Dieta reúne o resumo nutricional e os cartões das refeições.
+
+Os dados continuam na chave original de armazenamento local. O redesign preserva perfil, treinos, cargas, refeições, pesagens, XP e backups. As fotos dos exercícios e o banner são incluídos no cache offline do PWA.
+
+### Créditos das imagens
+
+- Banner: [Unsplash](https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e). Arquivo servido localmente; fotografia ilustrativa, sem associação com o aplicativo.
+- Exercícios: [free-exercise-db](https://github.com/yuhonas/free-exercise-db), sob Unlicense. Fontes individuais registradas em `EXERCISE_MEDIA` no `app.js`. Imagens ilustrativas; equipamentos podem variar entre academias.
