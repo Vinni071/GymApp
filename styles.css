@@ -65,3 +65,22 @@
 .media-credit{font-size:9px;line-height:1.6;color:var(--muted);margin:9px 0 0;overflow-wrap:anywhere}
 .media-credit a{text-decoration:none}.media-credit a:hover{text-decoration:underline}
 .media-note{margin:9px 0 0}.disclaimer>.media-credit{margin:0 0 8px}
+
+/* Motion: brief feedback, no layout changes or animation-dependent actions. */
+.screen-content{min-width:0}
+:is(.routine-card,.exercise summary,.btn,.round-icon,.circle-btn,.day-tabs button,.mobile-nav button,.nav-btn){transition:transform 180ms cubic-bezier(.22,1,.36,1),box-shadow 180ms,border-color 180ms,background-color 200ms,color 200ms}
+:is(.routine-card,.btn,.round-icon,.circle-btn,.day-tabs button,.mobile-nav button,.nav-btn):active:not(:disabled){transform:scale(.97)}
+.exercise summary:active{transform:scale(.99)}
+@media(hover:hover) and (pointer:fine){.routine-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px #0000000a}.round-icon:hover,.circle-btn:hover{transform:translateY(-1px)}}
+:is(body,.panel,.mini-section,.daily-checks,.exercise,.meal-card,.food-summary,.input,.macro,.modal,.avatar,.workout-hero){transition:background-color 220ms,color 220ms,border-color 220ms}
+.check{transition:background-color 160ms,border-color 160ms}
+.ex-body{overflow:clip}
+.modal-cover{animation:overlay-enter 180ms ease-out both}
+.modal{animation:modal-enter 280ms cubic-bezier(.22,1,.36,1) both}
+.toast{animation:toast-enter 280ms cubic-bezier(.22,1,.36,1) both}
+.workout-celebration{position:fixed;z-index:70;width:0;height:0;pointer-events:none}
+.workout-celebration i{position:absolute;display:block;width:6px;height:9px;border-radius:2px;pointer-events:none}
+@keyframes overlay-enter{from{opacity:0}to{opacity:1}}
+@keyframes modal-enter{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes toast-enter{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.workout-celebration{display:none}}

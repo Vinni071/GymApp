@@ -78,3 +78,9 @@ As demonstrações animadas vêm de [hasaneyldrm/exercises-dataset](https://gith
 A licença MIT do dataset não cobre as mídias. Consulte `assets/EXERCISES-DATASET-LICENSE.txt` e `assets/EXERCISES-DATASET-NOTICE.md` e os termos da Gym visual.
 
 A prancha usa a demonstração da versão com peso, identificada por uma nota; o plano mantém a prancha sem carga adicional. A elevação pélvica mantém a foto com banco e barra, pois não há GIF equivalente dessa variação no catálogo. As fotos anteriores são preservadas como alternativa caso alguma animação não carregue.
+
+## Animações da interface
+
+A navegação tem transições suaves e entrada dos cards em sequência. Abrir um exercício, concluir uma série, registrar refeições e finalizar um treino oferecem feedback visual. Janelas e avisos têm animações breves, e o modo escuro muda suavemente.
+
+A camada `motion.js` respeita a preferência do sistema por movimento reduzido. As ações e o salvamento dos registros acontecem imediatamente, sem aguardar a conclusão dos efeitos. O arquivo também faz parte do cache offline do PWA.
