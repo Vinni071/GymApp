@@ -1,4 +1,4 @@
-const CACHE_NAME = 'projeto85-app-v8';
+const CACHE_NAME = 'projeto85-app-v9';
 const OFFLINE_FILES = [
   "./",
   "./index.html",
@@ -8,6 +8,11 @@ const OFFLINE_FILES = [
   "./manifest.webmanifest",
   "./icon-192.png",
   "./icon-512.png",
+  "./icon-192-v2.png",
+  "./icon-512-v2.png",
+  "./apple-touch-icon.png",
+  "./favicon.png",
+  "./assets/logo-85.png",
   "./assets/exercises/abdominal-polia.jpg",
   "./assets/exercises/agachamento-smith.jpg",
   "./assets/exercises/cadeira-flexora.jpg",
