@@ -1,4 +1,4 @@
-const CACHE_NAME = 'projeto85-app-v9';
+const CACHE_NAME = 'projeto85-app-v10';
 const OFFLINE_FILES = [
   "./",
   "./index.html",

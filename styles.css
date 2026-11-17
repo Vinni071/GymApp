@@ -66,6 +66,9 @@
 .media-credit a{text-decoration:none}.media-credit a:hover{text-decoration:underline}
 .media-note{margin:9px 0 0}.disclaimer>.media-credit{margin:0 0 8px}
 
+/* Separate visible exercise cards without adding space above filtered results. */
+.exercise:not([hidden])~.exercise:not([hidden]){margin-top:10px}
+
 /* Motion: brief feedback, no layout changes or animation-dependent actions. */
 .screen-content{min-width:0}
 :is(.routine-card,.exercise summary,.btn,.round-icon,.circle-btn,.day-tabs button,.mobile-nav button,.nav-btn){transition:transform 180ms cubic-bezier(.22,1,.36,1),box-shadow 180ms,border-color 180ms,background-color 200ms,color 200ms}
