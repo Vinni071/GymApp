@@ -93,3 +93,7 @@
 .brand>.app-brand-logo{width:44px;height:44px;border-radius:13px}
 .brand-tag{gap:6px;padding:3px 9px 3px 4px}.brand-tag img{display:block;object-fit:contain;border-radius:6px;background:#fff}
 @media(max-width:350px){.top-user>.app-brand-logo{width:33px;height:33px;border-radius:10px}}
+
+.exercise-heading{align-items:center}
+.exercise-heading .small-muted{display:block;margin-top:3px}
+.collapse-exercises{flex-shrink:0;white-space:nowrap}
